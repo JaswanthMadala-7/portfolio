@@ -8,8 +8,8 @@ export const site = {
   shortName: "Jaswanth",
   monogram: "JM",
   title: "Software Engineer | Backend Developer | AI Systems Engineer",
-  // Set NEXT_PUBLIC_SITE_URL in your environment; this fallback is a placeholder.
-  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://YOUR_DOMAIN.example").replace(/\/$/, ""),
+  // NEXT_PUBLIC_SITE_URL overrides this; the canonical domain is the fallback.
+  url: (process.env.NEXT_PUBLIC_SITE_URL ?? "https://jaswanthmadala.com").replace(/\/$/, ""),
   description:
     "Software engineer working across backend systems, AI agents, and telecom automation with Java and Spring Boot.",
   hero: {
