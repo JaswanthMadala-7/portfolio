@@ -33,7 +33,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg/90 backdrop-blur">
       <div className="wrap flex h-16 items-center justify-between">
-        <Link href="/" className="font-display text-lg font-semibold tracking-tight" aria-label={`${site.monogram}, ${site.name}, home`}>
+        <Link
+          href="/"
+          onClick={() => setOpenPath(null)}
+          className="font-display text-lg font-semibold tracking-tight"
+          aria-label={`${site.monogram}, ${site.name}, home`}
+        >
           {site.monogram}
           <span className="text-accent">.</span>
         </Link>
@@ -74,6 +79,7 @@ export default function Header() {
               <li key={l.href}>
                 <Link
                   href={l.href}
+                  onClick={() => setOpenPath(null)}
                   aria-current={isActive(l.href) ? "page" : undefined}
                   className={`block border-b border-line py-3 ${isActive(l.href) ? "text-accent" : ""}`}
                 >

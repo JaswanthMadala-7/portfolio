@@ -37,14 +37,14 @@ export default function Home() {
               )}
             </div>
           </div>
-          <div className="hero-in hidden md:block" style={{ animationDelay: "180ms" }}>
+          <div className="hero-in mx-auto w-full max-w-sm md:mx-0 md:max-w-none" style={{ animationDelay: "180ms" }}>
             <Image
               src="/jaswanth.png"
               alt={`Portrait of ${site.name}`}
               width={512}
               height={512}
               priority
-              sizes="16rem"
+              sizes="(max-width: 768px) 100vw, 16rem"
               className="w-full rounded-2xl border border-line object-cover"
             />
             <aside className="mt-6 border-l border-line pl-6 text-sm text-muted" aria-label="Current focus">
